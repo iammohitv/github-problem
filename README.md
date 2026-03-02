@@ -56,7 +56,6 @@ Response:
 Final defaults must be:
 
 ```
-PORT=3000
 LOG_LEVEL=info
 NEW_DASHBOARD=false
 API_BASE=/api/v1
