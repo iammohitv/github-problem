@@ -1,5 +1,6 @@
 import { config } from "./config.js";
 
-export function health() {
-  return { ok: true, base: config.apiBase };
+export function log(message: string) {
+  if (config.logLevel === "silent") return;
+  console.log(`level=${config.logLevel} msg="${message}"`);
 }
