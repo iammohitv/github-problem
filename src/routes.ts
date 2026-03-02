@@ -1,5 +1,5 @@
 import { config } from "./config.js";
 
 export function health() {
-  return { ok: true, base: config.apiBase };
+  return { status: "ok", version: "1.0.0", base: config.apiBase };
 }
